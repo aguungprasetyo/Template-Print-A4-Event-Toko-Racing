@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printable Document</title>
+    <style>
+         body {
+                color: #1f1f1f; 
+                font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                align: center;
+            }
+
+          table, td {
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid red;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 13.5px;
+                font-weight: bold;
+                margin: 20px;
+            }
+
+        @media print {
+            @page {
+                size: A5;
+                margin: 2cm;
+            }
+
+      
+        }
+    </style>
+</head>
+<body>
+    <table class="Head">
+       <tr>
+        <th>Kartu Kontrol 
+            <table>
+                <tr>
+                    <td><img src="" alt="label images"></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><h1>No Start</h1></td>
+                                <td><p>065</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+       </th>
+    </tr>
+    </table>
+</body>
+</html>
