@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <title>Printable Document</title>
     <style>
 
@@ -18,6 +21,14 @@
             font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
             margin: 0; 
         }
+
+        .parisienne-regular {
+            font-family: "Parisienne", cursive;
+            font-size: 24px;
+            font-weight: 600;
+            font-style: normal;
+        }
+
 
         table {
             border-collapse: collapse;
@@ -47,7 +58,7 @@
         }
         
         th, td {
-            /* border: 1px solid #15f70d; */
+            border: 1px solid #15f70d;
             padding: 8px;
         }
 
@@ -56,6 +67,10 @@
 
         .solid {
             border: 2px solid #504f4f; 
+        }
+
+        .fix-120 {
+            height: 120px;
         }
 
         .w-660 {
@@ -97,6 +112,10 @@
             padding: 0;
         }
 
+        .pb-4 {
+            padding-bottom: 4px;
+        }
+
         .py-0 {
             padding: 4px 8px;
         }
@@ -129,13 +148,16 @@
             color: white;
         }
 
-
         .text-center {
             text-align: center;
         }
 
         .text-left {
             text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
         }
 
         .sub-text {
@@ -146,7 +168,7 @@
 
         @media print {
 
-                    * {
+                * {
                     margin: 0;
                     padding: 0;
                 }
@@ -185,7 +207,6 @@
                 }
                 
                 th, td {
-                    /* border: 1px solid #15f70d; */
                     padding: 8px;
                 }
 
@@ -235,6 +256,10 @@
                     padding: 0;
                 }
 
+                .pb-4 {
+                    padding-bottom: 4px;
+                }
+
                 .py-0 {
                     padding: 4px 8px;
                 }
@@ -276,6 +301,10 @@
                     text-align: left;
                 }
 
+                .text-right {
+                    text-align: right;
+                }
+
                 .sub-text {
                     font-size: 12px;
                     font-weight: 600;
@@ -290,17 +319,19 @@
     </style>
 </head>
 <body>
+
+<!--  print 1 -->
 <table>
     <tr>
         <td align="center" >
             <table class="solid w-660 p-5">
                 <!-- 1st row -->
                 <tr>
-                    <td >
+                    <td class="pb-4">
                         <table>
                             <tr>
                                 <!-- marking padding per section -->
-                                <td class="p-0">
+                                <td class="p-0 ">
                                     <table  class="wh-100 h-40 p-10 bg-yellow">
                                         <tr>
                                             <th>
@@ -319,7 +350,7 @@
                     <!-- marking padding per section -->
                     <td class="p-0">
                         <table class="wh-100">
-                            <tr>
+                            <tr class="fix-120">
                                 <!-- styling here -->
                                 <td class="wh-80 py-0">
                                     <table class="wh-100">
@@ -329,8 +360,8 @@
                                     </table>
                                 </td>
                                 <td class="py-0">
-                                    <table >
-                                        <tr>
+                                    <table class="wh-100">
+                                        <tr >
                                             <th class="text-center bg-red white ">
                                                 <h2>No Start</h2>
                                             </th>
@@ -434,5 +465,139 @@
         </td>
     </tr>
 </table>
+
+<!-- print 2 -->
+<table>
+    <tr>
+        <td align="center" >
+            <table class="solid w-660 p-5">
+                <!-- 1st row -->
+                <tr>
+                    <td class="pb-4">
+                        <table>
+                            <tr>
+                                <!-- marking padding per section -->
+                                <td class="p-0 ">
+                                    <table  class="wh-100 h-40 p-10 bg-yellow">
+                                        <tr>
+                                            <th>
+                                                <h1>Kwitansi Pendaftaran</h1>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- 2nd row -->
+                <tr>
+                    <!-- marking padding per section -->
+                    <td class="p-0">
+                        <table class="wh-100">
+                            <tr class="fix-120">
+                                <!-- styling here -->
+                                <td class="wh-80 py-0">
+                                    <table class="wh-100">
+                                        <tr>
+                                            <td style="background-image: url(./Hero.png); background-size: cover; background-position: center;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="py-0">
+                                    <table class="wh-100">
+                                        <tr>
+                                            <td class="text-center ">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- 3rd row -->
+                <tr>
+                    <!-- marking padding per section -->
+                    <td class="p-0" >
+                        <table class="wh-100">
+                            <tr>
+                                <!-- styling here -->
+                                <td class="wh-80 py-0">
+                                    <table class="wh-100">
+                                        <tr class="solid">
+                                            <th class="text-left">No Kwitansi</th>
+                                            <td class="text-right"><p>65</p></td>
+                                        </tr>
+                                        <tr class="solid">
+                                            <th class="text-left">Telah terima dari</th>
+                                            <td class="text-right"><p>Tommi Harihutomo</p></td>
+                                        </tr>
+                                        <tr class="solid">
+                                            <th class="text-left ">Uang Sejumlah Rp.</th>
+                                            <td class="text-right"><p>750,000.00</p></td>
+                                        </tr>
+                                        <tr class="solid">
+                                            <th class="text-left">Untuk pendaftaran kelas</th>
+                                            <td class="text-right"><p>23 Outlaw All Motor Diesel</p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class=" py-0">
+                                    <table class="wh-100">
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- 4th row -->
+                <tr>
+                    <!-- marking padding per section -->
+                    <td class="p-0">
+                        <table class="wh-100">
+                            <tr>
+                                <td class="wh-80  py-0">
+                                    <table class="wh-100">
+                                        <tr class="h-80">
+                                            <td class="solid text-center"><p class="parisienne-regular">Tujuh ratus lima puluh ribu rupiah</p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class=" py-0">
+                                    <table>
+                                        <tr class="solid h-80">
+                                            <td class="text-center"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- 5th row -->
+                <tr>
+                    <td class="p-0">
+                        <table class="wh-100">
+                            <tr>
+                                <td class="wh-80"></td>
+                                <td><p class="sub-text text-center">untuk peserta</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
 </body>
 </html>
