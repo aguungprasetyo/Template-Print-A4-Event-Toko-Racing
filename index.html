@@ -11,11 +11,26 @@
                 align: center;
             }
 
-          table, td {
+          table, th, td {
                 border-collapse: collapse;
                 width: 100%;
+                height: 100%;
                 border: 1px solid red;
-                padding: 20px;
+                padding: 10px;
+                margin: 0;
+                text-align: center;
+            }
+
+            .label {
+                text-align: left;
+            }
+
+            .width-80 {
+                width: 80%;
+            }
+            
+            .width-20 {
+               width: 20%;
             }
 
             h1 {
@@ -26,7 +41,7 @@
 
         @media print {
             @page {
-                size: A5;
+                size: A4;
                 margin: 2cm;
             }
 
@@ -35,24 +50,188 @@
     </style>
 </head>
 <body>
-    <table class="Head">
-       <tr>
-        <th>Kartu Kontrol 
-            <table>
-                <tr>
-                    <td><img src="" alt="label images"></td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td><h1>No Start</h1></td>
-                                <td><p>065</p></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-       </th>
-    </tr>
+
+    <table>
+        <!-- 1st row -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <!-- styling here -->
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Kartu Kontrol</th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- 2nd row -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <!-- styling here -->
+                        <td class="width-80">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="header image">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Nomor Start</th>
+                                </tr>
+                                <tr>
+                                    <td>065</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <!-- 3rd row -->
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <!-- styling here -->
+                        <td class="width-80">
+                            <table>
+                                <tr>
+                                    <th class="width-20 label">
+                                        NAMA
+                                    </th>
+                                    <td class="label">
+                                        Tommi Harihutomo
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="width-20 label">
+                                        TEAM
+                                    </th>
+                                    <td class="label">
+                                        USAHA KITA x JRC Racing Team
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="width-20 label">
+                                        MERK
+                                    </th>
+                                    <td class="label">
+                                        Toyota Fortuner
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="width-20 label">
+                                        WARNA
+                                    </th>
+                                    <td class="label">
+                                        Hitam
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td><img src="" alt="photo"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- 4th row -->
+         <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td class="width-80">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th>CLASS</th>
+                                            </tr>
+                                            <tr>
+                                                <td>23 Outlaw All Motor Diesel</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th>QTT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Empty</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th>Heat 1</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Empty</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th>Heat 2</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Empty</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th>APPROVAL</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Empty</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+         </tr>
+        
+        <!-- 5th row -->
+        <tr>
+            <td>
+                <p>* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka di-DISKUALIFIKASI</p>
+            </td>
+        </tr>
     </table>
 </body>
 </html>
