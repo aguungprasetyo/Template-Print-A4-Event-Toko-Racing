@@ -5,181 +5,291 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Printable Document</title>
     <style>
+
+        /* tag control */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
          body {
-                color: #1f1f1f; 
-                font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-                align: center;
-            }
+            color: #1f1f1f; 
+            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+            margin: 0; 
+        }
 
-          table, th, td {
-                border-collapse: collapse;
-                width: 100%;
-                height: 100%;
-                border: 1px solid red;
-                padding: 10px;
-                margin: 0;
-                text-align: center;
-            }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-            .label {
-                text-align: left;
-            }
+        h1 {
+            font-size: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
 
-            .width-80 {
-                width: 80%;
-            }
-            
-            .width-20 {
-               width: 20%;
-            }
+        h2 {
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
 
-            h1 {
-                font-size: 13.5px;
-                font-weight: bold;
-                margin: 20px;
-            }
+        h3 {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-weight: 600;
+        }
+        
+        th, td {
+            /* border: 1px solid #15f70d; */
+            padding: 8px;
+        }
+
+
+        /* class control */
+
+        .solid {
+            border: 2px solid #504f4f; 
+        }
+
+        .w-660 {
+            width: 660px;
+        }
+
+        .wh-100 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .wh-80 {
+            width: 80%;
+            height: 100%;
+        }
+
+        .wh-20 {
+            width: 20%;
+            height: 100%;
+        }
+
+        .h-40 {
+            height: 40px;
+        }
+
+        .h-80 {
+            height: 80px;
+        }
+
+        .p-10 {
+            padding: 10px;
+        }
+
+        .p-5 {
+            padding: 5px;
+        }
+
+        .p-0 {
+            padding: 0;
+        }
+
+        
+
+        .bg-yellow {
+            background-color: #fcef43;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-orange {
+            background-color: orange;
+        }
+        
+        .bg-blue {
+            background-color: #0380f5;
+        }
+
+        .bg-gray {
+            background-color: #424242;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .sub-text {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
 
         @media print {
             @page {
                 size: A4;
-                margin: 2cm;
+                margin: 2cm;   
             }
-
-      
         }
+
     </style>
 </head>
 <body>
+<table>
+    <tr>
+        <td align="center" >
+            <table class="solid w-660 p-5">
+                <!-- 1st row -->
+                <tr>
+                    <td >
+                        <table>
+                            <tr>
+                                <!-- marking padding per section -->
+                                <td class="p-0">
+                                    <table  class="wh-100 h-40 p-10 bg-yellow">
+                                        <tr>
+                                            <th>
+                                                <h1>Kartu Kontrol</h1>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
 
-    <table>
-        <!-- 1st row -->
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <!-- styling here -->
-                        <td>
-                            <table>
-                                <tr>
-                                    <th>Kartu Kontrol</th>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+                <!-- 2nd row -->
+                <tr>
+                    <!-- marking padding per section -->
+                    <td class="p-0">
+                        <table class="wh-100">
+                            <tr>
+                                <!-- styling here -->
+                                <td class="wh-80">
+                                    <table class="wh-100">
+                                        <tr>
+                                            <td style="background-image: url(./Hero.png); background-size: cover; background-position: center;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table >
+                                        <tr>
+                                            <th class="text-center bg-red white">
+                                                <h2>No Start</h2>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                <h1>065</h1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- 3rd row -->
+                <tr>
+                    <!-- marking padding per section -->
+                    <td class="p-0">
+                        <table class="so wh-100">
+                            <tr>
+                                <!-- styling here -->
+                                <td class="wh-80">
+                                    <table class="wh-100">
+                                        <tr>
+                                            <th class="solid text-left bg-orange">NAMA</th>
+                                            <td class="solid text-left"><p>Tommi Harihutomo</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="solid text-left bg-orange">TEAM</th>
+                                            <td class="solid text-left"><p>USAHA KITA x JRC Racing Team</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="solid text-left bg-red white">MERK</th>
+                                            <td class="solid text-left"><p>Toyota Fortuner</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="solid text-left bg-blue white">WARNA</th>
+                                            <td class="solid text-left"><p>Hitam</p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table class="wh-100">
+                                        <tr>
+                                            <td class="solid" style="background-image: url(./Photo.png); background-size: cover; background-position: center;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
 
-        <!-- 2nd row -->
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <!-- styling here -->
-                        <td class="width-80">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <img src="" alt="header image">
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <th>Nomor Start</th>
-                                </tr>
-                                <tr>
-                                    <td>065</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        
-        <!-- 3rd row -->
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <!-- styling here -->
-                        <td class="width-80">
-                            <table>
-                                <tr>
-                                    <th class="width-20 label">NAMA</th>
-                                    <td class="label">Tommi Harihutomo</td>
-                                </tr>
-                                <tr>
-                                    <th class="width-20 label">TEAM</th>
-                                    <td class="label">USAHA KITA x JRC Racing Team</td>
-                                </tr>
-                                <tr>
-                                    <th class="width-20 label">MERK</th>
-                                    <td class="label">Toyota Fortuner</td>
-                                </tr>
-                                <tr>
-                                    <th class="width-20 label">WARNA</th>
-                                    <td class="label">Hitam</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td><img src="" alt="photo"></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-
-        <!-- 4th row -->
-         <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td class="width-80">
-                            <table>
-                                <tr>
-                                    <th>adfadf</th>
-                                    <th>adfadf</th>
-                                    <th>adfadf</th>
-                                    <th>adfadf</th>
-                                </tr>
-                                <tr>
-                                    <td>adfadf</td>
-                                    <td>adfadf</td>
-                                    <td>adfadf</td>
-                                    <td>adfadf</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td >
-                            <table>
-                                <tr>
-                                    <th>adfad</th>
-                                </tr>
-                                <tr>
-                                    <td>adfad </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-         </tr>
-        
-        <!-- 5th row -->
-        <tr>
-            <td>
-                <p>* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka di-DISKUALIFIKASI</p>
-            </td>
-        </tr>
-    </table>
+                <!-- 4th row -->
+                <tr>
+                    <!-- marking padding per section -->
+                    <td class="p-0">
+                        <table class="wh-100">
+                            <tr>
+                                <td class="wh-80">
+                                    <table>
+                                        <tr>
+                                            <th class="solid bg-gray white"><h3>CLASS</h3></th>
+                                            <th class="solid wh-20 bg-orange"><h3>QTT</h3></th>
+                                            <th class="solid wh-20 bg-red white"><h3>Heat 1</h3></th>
+                                            <th class="solid wh-20 bg-blue white"><h3>Heat 2</h3></th>
+                                        </tr>
+                                        <tr class="h-80">
+                                            <td class="solid text-center"><p class="sub-text">23 Outlaw All Motor Diesel</p></td>
+                                            <td class="solid text-center">...</td>
+                                            <td class="solid text-center">...</td>
+                                            <td class="solid text-center">...</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table>
+                                        <tr >
+                                            <th class="solid bg-gray white"><h3>Approval</h3></th>
+                                        </tr>
+                                        <tr class="solid h-80">
+                                            <td class="text-center">...</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- 5th row -->
+                <tr>
+                    <td>
+                        <p class="sub-text">* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka di-DISKUALIFIKASI</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
