@@ -1,219 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-      <title>Bukti Pembayaran</title>
-      <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Bukti Pembayaran</title>
+    <style>
+        * {
+            color: #1f1f1f;
+            font-family: 'Inter', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-optical-sizing: auto;
+            margin: 0;
+        }
 
-            * {
-                  color: #1f1f1f; 
-                  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-                  margin: 0; 
-            }
+        body {
+            width: 660px;
+        }
 
-            body {
-                  display: table;
-                  width: 100%;
-                  height: 100%;
-            }
+        h1 {
+            margin: 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
 
-            h1 {
-                  margin: 0;
-                  text-align: center; 
-                  text-transform: uppercase; 
-                  font-weight: 800;
-            }
+        h3 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
 
-            h3 {
-                  text-align: center;
-                  text-transform: uppercase;
-                  font-weight: 800;
-            }
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+        }
 
-            p {
-                  font-size: 20px;
-                  font-weight: 600;
-            }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
 
-            img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-            }
+        .container {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #000;
+        }
 
-            /* class control */
+        .hero {
+            background-color: yellow;
+            text-align: center;
+            padding: 8px;
+        }
 
-            .container {
-                  width: 660px; 
-                  display: table;
-                  padding: 8px;
-            }
-            
-            .hero {
-                  background-color: yellow; 
-                  padding: 8px;
-                  display: table-row;
-            }
-            
-            .sub-text {
-                  font-size: 12px;
-                  font-weight: 600;
-            }
+        .sub-text {
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
 
-            .text-center {
-                  text-align: center;
-            }
+        .mb-8 {
+            margin-bottom: 8px;
+        }
 
-            .mb-8 {
-                  margin-bottom: 8px;
-            }
+        .table {
+            width: 100%;
+            margin-bottom: 8px;
+            border-collapse: collapse;
+        }
 
-            .fix-h-100 {
-                  height: 100px;
-            }
+        .table td,
+        .table th {
+            text-align: center;
+            border: 2px solid #000;
+        }
 
-            .fix-h-75 {
-                  height: 75px;
-            }
+        .bg-red {
+            background-color: red;
+            color: white;
+        }
 
-            .h-100 {
-                  height: 100%;
-            }
+        .bg-orange {
+            background-color: orange;
+        }
 
-            .p-4 {
-                  padding: 4px;
-            }
-            
-            .p-8 {
-                  padding: 8px;
-            }
+        .bg-blue {
+            background-color: #30aee9;
+            color: white;
+        }
 
-            .table {
-                  display: table;
-                  width: 100%;
-                  margin-bottom: 8px;
-            }
+        .bg-gray {
+            background-color: #313030;
+            color: white;
+        }
 
-            .table-row {
-                  display: table-row;
-            }
+        .bg-soft-white {
+            background-color: #f7f7f7;
+        }
 
-            .table-cell {
-                  display: table-cell;
-                  vertical-align: middle;
-            }
-
-            .bg-red {
-                  background-color: red;
-            }
-
-            .bg-orange {
-                  background-color: orange;
-            }
-
-            .bg-blue {
-                  background-color: #30aee9;
-            }
-
-            .bg-gray {
-                  background-color: #313030;
-            }
-
-            .bg-soft-white {
-                  background-color: #f7f7f7;
-            }
-
-            .white {
-                  color: white;
-            }
-
-            .b-1 {
-                  border: 2px solid #000;
-            }
-           
-            .bt-1 {
-                  border-top: 2px solid #000;
-            }
-            
-            .br-1 {
-                  border-right: 2px solid #000;
-            }
-      
-            .bb-1 {
-                  border-bottom: 2px solid #000;
-            }
-            
-            .bl-1 {
-                  border-left: 2px solid #000;
-            }
-
-      </style>
+        .white {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
 
-      <div class="container b-1">
-            <div class="hero mb-8">
-                  <h1>Kartu Kontrol</h1>
-            </div>
-            
-            <div class="table mb-8">
-                  <div class="table-cell fix-h-100">
-                        <img src="./Hero.png" alt="">
-                  </div>
-                  <div class="table-cell">
-                        <div class="bg-red p-4">
-                              <h3 class="white">NO START</h3>
-                        </div>
-                        <div class="bg-soft-white h-100 text-center">
-                              <h1>065</h1>
-                        </div>
-                  </div>
-            </div>
+    <div class="container">
+        <div class="hero mb-8">
+            <h1>Kartu Kontrol</h1>
+        </div>
 
-            <div class="table mb-8">
-                  <div class="table-row">
-                        <div class="table-cell b-1">
-                              <div class="bb-1 p-8 bg-orange"><p>NAMA</p></div>
-                              <div class="bb-1 p-8 bg-orange"><p>TEAM</p></div>
-                              <div class="bb-1 p-8 bg-red"><p class="white">MERK</p></div>
-                              <div class="p-8 bg-blue"><p class="white">WARNA</p></div>
-                        </div>
-                        <div class="table-cell b-1">
-                              <div class="bl-1 bb-1 p-8"><p>Tommi Harihutomo</p></div>
-                              <div class="bl-1 bb-1 p-8"><p>USAHA KITA x JRC Racing Team</p></div>
-                              <div class="bl-1 bb-1 p-8"><p>Toyota Fortuner</p></div>
-                              <div class="bl-1 p-8"><p>Hitam</p></div>
-                        </div>
-                        <div class="table-cell">
-                              <img src="./Photo.png" alt="">
-                        </div>
-                  </div>
-            </div>
-            
-            <div class="table mb-8">
-                  <div class="table-cell b-1 fix-h-75">
-                        <div class="table-row">
-                              <div class="table-cell p-4 bb-1 bl-1 bg-gray text-center white">CLASS</div>
-                              <div class="table-cell p-4 bb-1 bl-1 bg-orange text-center">QTT</div>
-                              <div class="table-cell p-4 bb-1 bl-1 bg-red text-center white">Heat 1</div>
-                              <div class="table-cell p-4 bb-1 bl-1 bg-blue text-center white">Heat 2</div>
-                        </div>
-                        <div class="table-row">
-                              <div class="table-cell bl-1 p-4">23 Outlaw All Motor Diesel</div>
-                              <div class="table-cell bl-1 p-4"></div>
-                              <div class="table-cell bl-1 p-4"></div>
-                              <div class="table-cell bl-1 p-4"></div>
-                        </div>
-                  </div>
-                  <div class="table-cell b-1">
-                        <div class="p-4 bb-1 bg-gray text-center white">APPROVAL</div>
-                        <div class="p-4 text-center"></div>
-                  </div>
-            </div>
-            
-            <p class="sub-text">* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka di-DISKUALIFIKASI</p>
+        <table class="table mb-8">
+            <tr>
+                <td style="width: 80%;"><img src="./Hero.png" alt="Hero Image"></td>
+                <td style="width: 20%;">
+                    <div class="bg-red">
+                        <h3>NO START</h3>
+                    </div>
+                    <div class="bg-soft-white">
+                        <h1>065</h1>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="table mb-8">
+            <tr>
+                <td class="bg-orange">NAMA</td>
+                <td>Tommi Harihutomo</td>
+                <td rowspan="4"><img src="./Photo.png" alt="Photo"></td>
+            </tr>
+            <tr>
+                <td class="bg-orange">TEAM</td>
+                <td>USAHA KITA x JRC Racing Team</td>
+            </tr>
+            <tr>
+                <td class="bg-red white">MERK</td>
+                <td>Toyota Fortuner</td>
+            </tr>
+            <tr>
+                <td class="bg-blue white">WARNA</td>
+                <td>Hitam</td>
+            </tr>
+        </table>
+
+        <table class="table mb-8">
+            <tr>
+                <td class="bg-gray">CLASS</td>
+                <td class="bg-orange">QTT</td>
+                <td class="bg-red white">Heat 1</td>
+                <td class="bg-blue white">Heat 2</td>
+            </tr>
+            <tr>
+                <td colspan="4">23 Outlaw All Motor Diesel</td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <tr>
+                <td class="bg-gray">APPROVAL</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <p class="sub-text">* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka
+            di-DISKUALIFIKASI</p>
+    </div>
 
 </body>
+
 </html>
