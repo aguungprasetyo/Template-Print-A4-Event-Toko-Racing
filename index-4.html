@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Bukti Pembayaran</title>
     <style>
         * {
@@ -49,7 +49,6 @@
         .container {
             width: 100%;
             padding: 8px;
-            border: 2px solid #000;
         }
 
         .hero {
@@ -74,9 +73,9 @@
             border-collapse: collapse;
         }
 
-        .table td,
-        .table th {
-            text-align: center;
+        /* Apply borders only to specified tables */
+        .bordered-table td,
+        .bordered-table th {
             border: 2px solid #000;
         }
 
@@ -130,7 +129,8 @@
             </tr>
         </table>
 
-        <table class="table mb-8">
+        <!-- Border applied to this table -->
+        <table class="table mb-8 bordered-table">
             <tr>
                 <td class="bg-orange">NAMA</td>
                 <td>Tommi Harihutomo</td>
@@ -150,7 +150,8 @@
             </tr>
         </table>
 
-        <table class="table mb-8">
+        <!-- Border applied to this table -->
+        <table class="table mb-8 bordered-table">
             <tr>
                 <td class="bg-gray">CLASS</td>
                 <td class="bg-orange">QTT</td>
@@ -162,7 +163,8 @@
             </tr>
         </table>
 
-        <table class="table">
+        <!-- Border applied to this table -->
+        <table class="table bordered-table">
             <tr>
                 <td class="bg-gray">APPROVAL</td>
             </tr>
@@ -171,8 +173,7 @@
             </tr>
         </table>
 
-        <p class="sub-text">* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka
-            di-DISKUALIFIKASI</p>
+        <p class="sub-text">* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka di-DISKUALIFIKASI</p>
     </div>
 
 </body>
