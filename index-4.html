@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Bukti Pembayaran</title>
     <style>
+
         * {
             color: #1f1f1f;
-            font-family: 'Inter', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            
             margin: 0;
+            font-family: 'Inter', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
         }
 
         body {
-            display: flex;
-            justify-content: center;
+            padding: 1cm 1.5cm;
         }
 
         td {
@@ -114,6 +114,8 @@
         .white {
             color: white;
         }
+
+        
     </style>
 </head>
 
@@ -132,7 +134,7 @@
                     <div class="bg-red" style="padding: 8px;">
                         <h3 class="white">NO START</h3>
                     </div>
-                    <div class="bg-soft-white" style="height: 100px;">
+                    <div class="bg-soft-white" style="height: 100px; vertical-align: middle;">
                         <h1>065</h1>
                     </div>
                 </td>
@@ -142,20 +144,20 @@
         <!-- Border applied to this table -->
         <table class="table mb-8 bordered-table">
             <tr>
-                <td class="bg-orange" style="padding: 8px;"><p>NAMA</p></td>
+                <td class="bg-orange" style="padding: 8px; width: 20%;"><p>NAMA</p></td>
                 <td style="padding: 8px;"><p>Tommi Harihutomo</p></td>
-                <td rowspan="4" style="width: 20%; text-align: center;"><p>Photos</p></td>
+                <td rowspan="4" style="width: 20%; text-align: center; background-image: url(./Photo.png); background-size: cover;"></td>
             </tr>
             <tr>
-                <td class="bg-orange" style="padding: 8px;"><p>TEAM</p></td>
+                <td class="bg-orange" style="padding: 8px; width: 20%;"><p>TEAM</p></td>
                 <td style="padding: 8px;"><p>USAHA KITA x JRC Racing Team</p></td>
             </tr>
             <tr>
-                <td class="bg-red white" style="padding: 8px;"><p>MERK</p></td>
+                <td class="bg-red white" style="padding: 8px; width: 20%;"><p>MERK</p></td>
                 <td style="padding: 8px;"><p>Toyota Fortuner</p></td>
             </tr>
             <tr>
-                <td class="bg-blue white" style="padding: 8px;"><p>WARNA</p></td>
+                <td class="bg-blue white" style="padding: 8px; width: 20%;"><p>WARNA</p></td>
                 <td style="padding: 8px;"><p>Hitam</p></td>
             </tr>
         </table>
@@ -163,11 +165,11 @@
         <!-- Border applied to this table -->
             <table class="table mb-8 bordered-table">
                 <tr>
-                    <td  class="bg-gray" style="width: 35%; text-align: center; padding: 8px;">CLASS</td>
-                    <td class="bg-orange" style="width: 15%; text-align: center; padding: 8px;">QTT</td>
-                    <td class="bg-red white" style="width: 15%; text-align: center; padding: 8px;">Heat 1</td>
-                    <td class="bg-blue white" style="width: 15%; text-align: center; padding: 8px;">Heat 2</td>
-                    <td  class="bg-gray" style="width: 20%; text-align: center; padding: 8px;">APPROVAL</td>
+                    <td  class="bg-gray" style="width: 35%; text-align: center; padding: 8px;"><p class="white" style="font-size: 14px;">CLASS</p></td>
+                    <td class="bg-orange" style="width: 15%; text-align: center; padding: 8px;"><p style="font-size: 14px;">QTT</p></td>
+                    <td class="bg-red white" style="width: 15%; text-align: center; padding: 8px;"><p class="white" style="font-size: 14px;">Heat 1</p></td>
+                    <td class="bg-blue white" style="width: 15%; text-align: center; padding: 8px;"><p class="white" style="font-size: 14px;">Heat 2</p></td>
+                    <td  class="bg-gray" style="width: 20%; text-align: center; padding: 8px;"><p class="white" style="font-size: 14px;">APPROVAL</p></td>
                 </tr>
                 <tr>
                     <td style="height: 75px; text-align: center;"><p class="sub-text">23 Outlaw All Motor Diesel</p></td>
@@ -180,6 +182,8 @@
     
         <p class="sub-text">* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka di-DISKUALIFIKASI</p>
     </div>
+
+    <div></div>
 
 </body>
 
