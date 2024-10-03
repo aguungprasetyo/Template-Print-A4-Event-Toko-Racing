@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <title>Bukti Pembayaran</title>
     <style>
 
@@ -15,7 +16,6 @@
             color: #1f1f1f;
             margin: 0;
             font-family: 'Inter', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
         }
 
         body {
@@ -31,7 +31,7 @@
             margin: 0;
             text-align: center;
             text-transform: uppercase;
-            font-weight: 800;
+            font-weight: 900;
         }
 
         h3 {
@@ -44,12 +44,6 @@
             font-size: 18px;
             font-weight: 600;
             margin: 0;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
         }
 
         .container {
@@ -121,14 +115,15 @@
 
 <body>
 
+    <!-- KARTU KONTROL -->
     <div class="container">
         <div class="hero mb-8">
             <h1>Kartu Kontrol</h1>
         </div>
 
-        <table class="table mb-8">
+        <table class="table">
             <tr>
-                <td rowspan="2" style="width: 80%; background-image: url(./Hero.png); background-size: cover;"></td>
+                <td rowspan="2" style="width: 80%; background-image: url(./Hero.png); background-size: cover; background-position: center; background-repeat: no-repeat;  margin: 0;  height: 128px"></td>
                 <td class="bg-red" style="width: 20%; padding: 8px;">
                     <h3 class="white">NO START</h3>
                 </td>
@@ -143,9 +138,13 @@
         <!-- Border applied to this table -->
         <table class="table mb-8 bordered-table">
             <tr>
+                <td class="bg-orange" style="padding: 8px; width: 20%;"><p>KIS</p></td>
+                <td style="padding: 8px;"><p>0131/IMI-KEPRI/XI/2022</p></td>
+                <td rowspan="5" style="width: 25%; text-align: center; background-image: url(./Photo.png); background-size: cover; background-position: center; background-repeat: no-repeat;  margin: 0;"></td>
+            </tr>
+            <tr>
                 <td class="bg-orange" style="padding: 8px; width: 20%;"><p>NAMA</p></td>
                 <td style="padding: 8px;"><p>Tommi Harihutomo</p></td>
-                <td rowspan="4" style="width: 20%; text-align: center; background-image: url(./Photo.png); background-size: cover;"></td>
             </tr>
             <tr>
                 <td class="bg-orange" style="padding: 8px; width: 20%;"><p>TEAM</p></td>
@@ -182,7 +181,116 @@
         <p class="sub-text">* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka di-DISKUALIFIKASI</p>
     </div>
 
-    <div></div>
+    <!-- KWITANSI PENDAFTARAN -->
+    <div class="container" style="margin-top: 1cm">
+        <div class="hero mb-8">
+            <h1>KWITANSI PENDAFTARAN</h1>
+        </div>
+
+        <table class="table mb-8">
+            <tr>
+                <td style="width: 80%; background-image: url(./Hero.png); background-size: cover; background-position: center; background-repeat: no-repeat;  margin: 0; height: 128px;"></td>
+            </tr>
+        </table>
+
+        <!-- Border applied to this table -->
+        <table class="table">
+            <tr style="border: 2px solid;">
+                <td style="padding: 8px;"><p style="font-size: medium;">No Kwitansi</p></td>
+                <td style="padding: 0 8px;"><p style="font-size: 24px; font-weight: 900; text-align: right;">65</p></td>
+            </tr>
+            <tr style="border: 2px solid;">
+                <td style="padding: 8px;"><p style="font-size: medium;">Telah terima dari</p></td>
+                <td style="padding: 8px;"><p style="font-size: medium; text-align: right;">Tommi Harihutomo</p></td>
+            </tr>
+            <tr style="border: 2px solid;">
+                <td style="padding: 8px;"><p style="font-size: medium;">Uang Sejumlah Rp.</p></td>
+                <td style="padding: 8px;"><p style="font-size: medium; text-align: right;">750,000.00</p></td>
+            </tr>
+            <tr style="border: 2px solid;">
+                <td style="padding: 8px;"><p style="font-size: medium;">Untuk pendaftaran kelas</p></td>
+                <td style="padding: 8px;"><p style="font-size: medium; text-align: right;">23 Outlaw All Motor Diesel</p></td>
+            </tr>
+        </table>
+        <table class="table" style="margin-bottom: 0;">
+            <tr style="border: 2px solid;">
+                <td style="padding: 14px; text-align: center;"><p style="font-family: 'Parisienne', cursive; font-size: 24px; font-weight: 600; font-style: normal;">Tujuh ratus lima puluh ribu rupiah</p></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- FORMULIR PENDAFTARAN -->
+    <div class="container" style="margin-top: 1cm;">
+        <table class="table mb-8">
+            <tr>
+                <td style="background-image: url(./Hero.png); background-size: cover; background-position: center; background-repeat: no-repeat;  margin: 0;  height: 128px"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #b2e4fc; padding: 8px; text-align: center;">
+                    <p style="font-size: 16px; font-weight: 900;">FORMULIR PENDAFTARAN</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0;">
+                    <div class="bg-red" style="width: 30%; padding: 8px; text-align: center; float: right;">
+                        <p class="white" style="font-size: 16px; font-weight: 800;">Exhibition</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Border applied to this table -->
+        <table class="table mb-8">
+            <tr>
+                <td style="padding: 4px; width: 30%;"><p style="font-size: medium; fontw">NO START</p></td>
+                <td style="padding: 0 4px;">
+                    <div class="bg-blue" style="width: 15%; padding: 8px; text-align: center;">
+                        <p class="white" style="font-size: 24px; font-weight: 700;">065</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 4px; width: 30%;"><p style="font-size: medium; fontw">NAMA PESERTA</p></td>
+                <td style="padding: 4px;"><p style="font-size: medium;">Tommi Harihutomo</p></td>
+            </tr>•
+            <tr>
+                <td style="padding: 4px; width: 30%;"><p style="font-size: medium; fontw">PROVINSI/KOTA</p></td>
+                <td style="padding: 4px;"><p style="font-size: medium;">DIY</p></td>
+            </tr>
+            <tr>
+                <td style="padding: 4px; width: 30%;"><p style="font-size: medium; fontw">TEAM</p></td>
+                <td style="padding: 4px;"><p style="font-size: medium;">USAHA KITA x JRC Racing Team</p></td>
+            </tr>
+            <tr>
+                <td style="padding: 4px; width: 30%;"><p style="font-size: medium; fontw">KENDARAAN</p></td>
+                <td style="padding: 4px;"><p style="font-size: medium;">Toyota Fortuner</p></td>
+            </tr>
+            <tr>
+                <td style="padding: 4px; width: 30%;"><p style="font-size: medium; fontw">KELAS</p></td>
+                <td style="padding: 4px;"><p style="font-size: medium;">23 Outlaw All Motor Diesel</p></td>
+            </tr>
+        </table>
+
+        <!-- Border applied to this table -->
+            <table class="table mb-8 bordered-table">
+                <tr>
+                    <td  class="bg-gray" style="width: 35%; text-align: center; padding: 8px;"><p class="white" style="font-size: 14px;">CLASS</p></td>
+                    <td class="bg-orange" style="width: 15%; text-align: center; padding: 8px;"><p style="font-size: 14px;">QTT</p></td>
+                    <td class="bg-red white" style="width: 15%; text-align: center; padding: 8px;"><p class="white" style="font-size: 14px;">Heat 1</p></td>
+                    <td class="bg-blue white" style="width: 15%; text-align: center; padding: 8px;"><p class="white" style="font-size: 14px;">Heat 2</p></td>
+                    <td  class="bg-gray" style="width: 20%; text-align: center; padding: 8px;"><p class="white" style="font-size: 14px;">APPROVAL</p></td>
+                </tr>
+                <tr>
+                    <td style="height: 75px; text-align: center;"><p class="sub-text">23 Outlaw All Motor Diesel</p></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+            </table>
+    
+        <p class="sub-text">* Kehilangan kartu kontrol = Denda Rp. 200.000,-, jika setelah penyisihan maka di-DISKUALIFIKASI</p>
+    </div>
 
 </body>
 
